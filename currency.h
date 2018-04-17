@@ -17,8 +17,6 @@ private:
 	int fifties = 0;
 	int hundreds = 0;
 	double creditBal = 0;
-	int acctNum = 0;
-	int routNum = 0;
 
 public:
 	double getBalance()
@@ -64,15 +62,6 @@ public:
 	int getHundredBal()
 	{
 		return hundreds * 100;
-	}
-
-	void checkAcctNum()
-	{
-		if (acctNum = 0)
-		{
-			acctNum = rand() % 10000000 + 89999999;
-		}
-		//Needs to also check all other account numbers which should be stored in a database file. 
 	}
 
 	currency(); //Default Constructor

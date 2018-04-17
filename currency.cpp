@@ -19,9 +19,6 @@ currency::currency(int newPenny, int newNickel, int newDime, int newQuartar, int
 	fifties = newFifties;
 	hundreds = newHundreds;
 	creditBal = newCredit;
-
-	routNum = 02100003;
-	checkAcctNum();
 }
 
 currency::~currency()

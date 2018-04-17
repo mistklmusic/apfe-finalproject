@@ -4,6 +4,7 @@
 #include <string>
 
 #include "employee.h"
+#include "department.h"
 
 using namespace std;
 
@@ -14,40 +15,48 @@ private:
 	employee storeManager;
 	int storeNum = 0;
 	int numEmployees = 0;
-	vector<string> employeeList; //Should actually be stored in a file
+	vector<employee> employeeList; //Should actually be stored in a file
 	int numDepartments = 0;
-	vector<string> departments; //Should actually be stored in a file
+	vector<department> departments; //Should actually be stored in a file
 
 public:
 	string getName()
 	{
 		return storeName;
 	}
-
 	employee getManager()
 	{
 		return storeManager;
 	}
-
 	int getStoreNum()
 	{
 		return storeNum;
 	}
-	
 	int getNumEmployees()
 	{
 		return numEmployees;
 	}
-
-	vector<string> getEmployees()
+	vector<employee> getEmployees()
 	{
-		vector<string> tempList;
+		vector<employee> tempList;
 		//Return list of employees and their positions in alphabetical order
 		//Read file named "employeeList" and add names and positions to the string tempList
-		//List of employees found in a file
 		return tempList; //Returns the list employees
 	}
+	int getNumDepartments() //Returns number of departments in the store
+	{
+		return numDepartments;
+	}
+	vector<department> getDepartments()
+	{
+		vector<department> tempList;
+		//Return list of departments in the store (in alphabetical order)
+		//Read file named "departmentList" and add names and department manager to the tempList
+		return tempList; //Returns the list departments with their managers
+	}
+
 	store();
+	store(string newStoreName, employee newStoreManager, int newStoreNum);
 	~store();
 };
 

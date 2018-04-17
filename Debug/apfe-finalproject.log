@@ -1,11 +1,4 @@
-﻿  stdafx.cpp
-  store.cpp
-  regist.cpp
-  person.cpp
-  merch.cpp
-  employee.cpp
-  department.cpp
+﻿  wallet.cpp
   currency.cpp
-  apfe-finalproject.cpp
   Generating Code...
   apfe-finalproject.vcxproj -> C:\Users\ipown\Google Drive\College\Spring 2018\Advanced Programming\Final Project\apfe-finalproject\Debug\apfe-finalproject.exe
